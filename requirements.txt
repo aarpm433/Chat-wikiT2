@@ -1,0 +1,8 @@
+beautifulsoup4==4.15.0
+fastembed==0.9.1
+fasttextembed==1.0.2
+llama_cpp_python==0.3.36
+markdownify==1.2.3
+python-dotenv>=1.0.1
+requests==2.34.2
+sqlite-vec==0.1.9

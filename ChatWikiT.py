@@ -8,6 +8,15 @@ from sqlite_vec import serialize_float32
 from fastembed import TextEmbedding
 from llama_cpp import Llama
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+MODEL_PATH = os.getenv("MODEL_PATH", "models/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf")
+DB_PATH = os.getenv("DB_PATH", "wiki_data/chat_wikiT_v2.sqlite")
+N_CTX = int(os.getenv("N_CTX", "4096"))
+TOP_K = int(os.getenv("TOP_K", "5"))
+
 # ------------------------------------------------------------------
 # PATH & ENVIRONMENT CONFIGURATION
 # ------------------------------------------------------------------
