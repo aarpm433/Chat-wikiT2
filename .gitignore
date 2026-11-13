@@ -1,0 +1,4 @@
+/wiki_data
+/models
+.DS_Store
+*.sqlite
